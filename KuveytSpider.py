@@ -1,9 +1,9 @@
-from BankSpyder import BankSpyder
+from BankSpider import BankSpider
 from bs4 import BeautifulSoup
 
 from CustomExceptions import *
 
-class KuveytSpyder(BankSpyder):
+class KuveytSpider(BankSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
