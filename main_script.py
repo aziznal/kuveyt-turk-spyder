@@ -19,7 +19,7 @@ def run_script(spyder):
     print(f"New data will be collected every {interval} seconds")
     print(f"Around {(9 * 60 * 60)//30} data points will be gathered")
 
-    while not banks_are_open():
+    while banks_are_open():
         
         sameline_print(f"@datapoint {current_loop + 1}")
         current_loop += 1
